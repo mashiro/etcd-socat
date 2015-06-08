@@ -3,7 +3,7 @@ set -eu
 
 KEY=$1
 
-addr=$(etcdctl get $KEY 2> /dev/null)
+addr=$(etcdctl get $KEY)
 pid=
 
 start() {
